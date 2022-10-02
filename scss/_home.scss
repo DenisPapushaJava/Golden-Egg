@@ -71,3 +71,20 @@
         }
     }
 }
+.home__text{
+  text-align: center; 
+   h6{
+    color:$white;
+    font-size: $text;
+   }
+   h1{
+    color:$yellow;
+    font-family: $kurale;
+    font-weight: normal;
+    font-size: 72px;
+    margin-top: 25px;
+    &::after{
+        @include line;
+    }
+   }
+}
