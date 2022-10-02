@@ -28,6 +28,30 @@
         background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
     }
     .top-menu__list {
-        @include flex(center, center)
+        @include flex(center, center);
+    }
+    .top-menu__item{
+        margin: 0 5px;
+        a{
+            text-transform: uppercase;
+            color:$white;
+            font-size: 12px;
+            font-weight: 700;
+            display: block;
+            padding: 40px 25px;
+            transition: 0.3s;
+            border-top: 5px solid transparent;
+            &:hover{
+                color: $yellow;
+                border-top: 5px solid $yellow;
+            }
+        }
+    }
+    .logo{
+        margin: 0 60px;
+        img{
+            position: relative;
+            top: 16px;
+        }
     }
 }
