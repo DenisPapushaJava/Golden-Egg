@@ -55,3 +55,19 @@
         }
     }
 }
+.home__container-center{
+    @include flex(space-between, flex-start);
+    margin-top: 175px;
+}
+.socials{
+    width: 62px;
+    a{
+        display: block;
+        height: 62px;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover{
+            background: $yellow;
+        }
+    }
+}
